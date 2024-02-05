@@ -1,0 +1,14 @@
+bilet = int(input("Введите число билетов"))
+cost = 0
+for i in range(0, bilet):
+    age = int(input(" Введите возраст "))
+    if age < 18:
+        cost += 0
+    elif 18 <= age <= 25:
+        cost += 990
+    elif age >= 25:
+        cost += 1390
+if bilet > 3:
+    cost *= 0.9
+
+print(cost)
